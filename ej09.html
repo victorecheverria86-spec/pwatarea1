@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9 - Galería</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #2d3436;
+        }
+
+        /* GALERÍA */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        figure {
+            background: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Mis Pasatiempos</h1>
+
+    <div class="galeria">
+
+        <figure>
+            <img src="imagenes/futbol.jpg" alt="Fútbol">
+            <figcaption>Fútbol - Mi deporte favorito</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagenes/musica.png" alt="Música">
+            <figcaption>Música - Me gusta relajarme escuchando</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagenes/programar.jpg" alt="Programación">
+            <figcaption>Programación - Mi pasión por la tecnología</figcaption>
+        </figure>
+
+    </div>
+
+</body>
+
+</html>
